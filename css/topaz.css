@@ -1,5 +1,5 @@
 body {
-  background: #222;
+  background: #180624;
   color: #fff;
   font-family: 'Circular', sans-serif !important;
   -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -17,11 +17,11 @@ body {
 }
 
 #js-rotating {
-  color: #FFC300;
+  color: #EDCA35;
 }
 
 #js-rotating2 {
-  color: #FF5733;
+  color: #0CC1AC;
 }
 
 .pretitle {
@@ -35,7 +35,7 @@ body {
           transform: rotate(-90deg);
   font-size: 3.0em;
   float: right;
-  color: #900C3E;
+  color: #0CC1AC;
 }
 
 .biggg {
@@ -104,10 +104,18 @@ body {
 }
 
 .work-box:hover {
-  background: #571845;
+  background: #180624;
   color: #fff;
   -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.work-box:hover .work-company {
+  color: #F1F2EF;
+}
+
+.work-box:hover .work-position {
+  color: #EDCA35;
 }
 
 .work-wrapper {
@@ -123,12 +131,42 @@ body {
   width: 100%;
 }
 
+.a {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.b {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.c {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.d {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
 .portfolio-wrapper {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -138,7 +176,7 @@ body {
 
 .rotate-mobile {
   display: none;
-  color: #900C3E;
+  color: #0CC1AC;
 }
 
 .social-links {
@@ -152,7 +190,7 @@ body {
 }
 
 .social-links li:hover {
-  color: #FF5733;
+  color: #D93C3C;
 }
 
 @media only screen and (max-width: 768px) {
@@ -164,7 +202,7 @@ body {
   }
   .rotate-mobile {
     display: block;
-    color: #900C3E !important;
+    color: #0CC1AC !important;
   }
   .biggg {
     font-size: 1.9em !important;
@@ -239,7 +277,7 @@ body {
   }
   .rotate-mobile {
     display: block;
-    color: #900C3E;
+    color: #0CC1AC;
   }
   .biggg {
     font-size: 1.8em !important;
